@@ -1,0 +1,18 @@
+<div class="w-100 h-100 d-flex flex-column">
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand">
+            Angular State Manager
+        </a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item" [routerLinkActive]="'active'">
+                <a class="nav-link" [routerLink]="'/todos'">Todos</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="'active'">
+                <a class="nav-link" [routerLink]="'/counter'">Counter             <span class="badge badge-light">{{counter$ | async}}</span></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="flex-grow-1">
+        <router-outlet></router-outlet>
+    </div>
+</div>
