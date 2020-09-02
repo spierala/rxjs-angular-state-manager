@@ -39,7 +39,6 @@ export class TodosStateService extends StateService<TodoState> {
   );
   filter$: Observable<Filter> = this.select((state) => state.filter);
   selectedTodo$: Observable<Todo> = this.select((state) => {
-    console.log('selectedTodo$ callback');
     if (state.selectedTodoId === 0) {
       return new Todo();
     }
@@ -51,7 +50,8 @@ export class TodosStateService extends StateService<TodoState> {
 
   constructor(private apiService: TodosApiService) {
     super(initialState);
-    this.load(); // TODO trigger load in component?
+
+    this.load();
   }
 
   selectTodo(todo: Todo) {
