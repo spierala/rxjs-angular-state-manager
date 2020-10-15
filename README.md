@@ -1,3 +1,3 @@
-# rxjs-angular-state-manager
+# [Simple State Managment in Angular with RxJS/BehaviorSubject](https://dev.to/angular/simple-yet-powerful-state-management-in-angular-with-rxjs-4f8g)
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/rxjs-angular-state-manager)
+[StackBlitz Demo⚡️](https://stackblitz.com/edit/rxjs-angular-state-manager)
